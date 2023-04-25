@@ -1,8 +1,31 @@
-/*
+/* Styling for the entire countdown timer container */
+.countdown-timer {
+	font-size: 1em;
+	color: var(--text-normal);
+	text-align: center;
+}
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+/* Styling for the event name */
+.countdown-timer-event-name {
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: var(--text-accent);
+}
 
-If your plugin does not need CSS, delete this file.
+/* Styling for the time container that holds the days, hours, minutes, and seconds */
+.countdown-timer-time-container {
+	display: inline-flex;
+	justify-content: space-around;
+	gap: 4px;
+	padding: 0 5px;
+}
 
-*/
+/* Styling for the individual time elements: days, hours, minutes, and seconds */
+.countdown-timer-days,
+.countdown-timer-hours,
+.countdown-timer-minutes,
+.countdown-timer-seconds {
+	font-weight: bold;
+	color: var(--text-accent);
+}
