@@ -1,7 +1,7 @@
 {
 	"id": "obsidian-countdown",
 	"name": "Countdown Timer",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "Countdown to an event.",
 	"author": "Jimmy Truong",
