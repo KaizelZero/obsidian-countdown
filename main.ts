@@ -80,7 +80,8 @@ export default class CountdownTimerPlugin extends Plugin {
 			const timeRemaining = targetDate.getTime() - now;
 
 			if (timeRemaining < 0) {
-				timerElement.innerHTML = "The countdown has ended!";
+				timerElement.innerHTML =
+					"The countdown to " + { eventName } + " is over!";
 				return;
 			}
 
@@ -99,7 +100,7 @@ export default class CountdownTimerPlugin extends Plugin {
 			daysElement.innerHTML = `${days} days `;
 			hoursElement.innerHTML = `${hours} hours `;
 			minutesElement.innerHTML = `${minutes} minutes `;
-			secondsElement.innerHTML = `${seconds} seconds`;
+			secondsElement.innerHTML = `${seconds} seconds `;
 
 			setTimeout(updateTimer, 1000);
 		};
