@@ -79,9 +79,9 @@ export default class CountdownTimerPlugin extends Plugin {
 			const now = new Date().getTime();
 			const timeRemaining = targetDate.getTime() - now;
 
+			let eventNameString = eventName.toString();
 			if (timeRemaining < 0) {
-				timerElement.innerHTML =
-					"The countdown to " + { eventName } + " is over!";
+				timerElement.innerHTML = `The countdown to ${eventNameString} is over.`;
 				return;
 			}
 

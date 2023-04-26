@@ -10,6 +10,8 @@
 	font-size: 2em;
 	font-weight: bold;
 	margin-bottom: 5px;
+	padding: 0;
+	margin-top: 0;
 	color: var(--text-accent);
 }
 
